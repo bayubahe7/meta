@@ -42,12 +42,12 @@
   <script type="text/javascript" src="vanilla-tilt.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      VanillaTilt.init(document.querySelector(.card));
-    });
-    VanillaTilt.init(document.querySelector(.card),{
-      max: 25,
-      speed: 400
-    });
+       const cards =
+       document.querySelectorAll(".card");
+       cards.forEach(function(card) {
+              VanillaTilt.init(card)
+            });
+            });
   </script>
 </body>
 </html>
